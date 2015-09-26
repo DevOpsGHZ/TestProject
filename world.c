@@ -1,0 +1,4 @@
+char *world()
+{
+	return "World";
+}
