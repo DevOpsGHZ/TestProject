@@ -1,9 +1,12 @@
 CC = gcc
+CCFLAGS = -g3 -DDEBUG -g
 TARGET = helloworld
 OBJECTS = main.o hello.o world.o
 
+
 $(TARGET): $(OBJECTS)
-	$(CC) -o helloworld $(OBJECTS)
+	$(CC) $(CCFLAGS) -o helloworld $(OBJECTS)
+	@echo "dev build sucess."
 
 main.o: main.c
 	$(CC) -c main.c
