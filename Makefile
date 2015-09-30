@@ -4,6 +4,7 @@ OBJECTS = main.o hello.o world.o
 
 $(TARGET): $(OBJECTS)
 	$(CC) -o helloworld $(OBJECTS)
+	@echo "release build success."
 
 main.o: main.c
 	$(CC) -c main.c
